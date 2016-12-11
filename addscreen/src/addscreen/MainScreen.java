@@ -12,7 +12,7 @@ public MainScreen()
 	listener.addToMain(this);
 	setSize(new Dimension(500,500));
 	getContentPane().setLayout(null);
-	JButton btnAddScreen = new JButton("add screen");
+	JButton btnAddScreen = new JButton("Add Screen");
 	btnAddScreen.setHorizontalAlignment(SwingConstants.LEADING);
 	btnAddScreen.setBounds(0, 0, 101, 23);
 	btnAddScreen.addActionListener(listener);
