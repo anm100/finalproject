@@ -114,6 +114,7 @@ public class ScreenGUI extends JPanel {
 	        button.addActionListener(new ActionListener() {
 	        	public void actionPerformed(ActionEvent arg0) {
 		 		    System.out.println("Selected: " + arg0.getActionCommand());
+		 		    (new ButtonTypeGUI()).setVisible(true);
 	
 	        	}
 	        });
