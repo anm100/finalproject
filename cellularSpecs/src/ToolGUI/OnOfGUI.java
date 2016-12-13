@@ -28,6 +28,7 @@ import javax.swing.JTextArea;
 public class OnOfGUI extends JFrame {
 	protected JTextField txtUndefined;
 	protected JTextField textField;
+	protected  int  x=0,y=0,hight=143,width=30;
 	protected static JButton btnSave;
 	public OnOfGUI(String ScreenName)
 	{
@@ -72,18 +73,18 @@ public class OnOfGUI extends JFrame {
 		 btnSave = new JButton("save");
 		btnSave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				//ScreenGUI j=new ScreenGUI
 				ScreenGUI j=MainScreenGui.screenPanels.get(MainScreenGui.screenPanels.size()-1);
-				
-			
-		 	       JLabel lblNewLabel = new JLabel("New label");
-			        lblNewLabel.setBorder(new LineBorder(new Color(0, 0, 0), 1));
-			        lblNewLabel.setBounds(0, 0, 143, 40);
-			      lblNewLabel.setText(" "+textField.getText().toString()+"");
-
+				JLabel lblNewLabel=new JLabel ();
+				 lblNewLabel=CreateLabel("New label",x,y,hight,width);
+				 	y=y+30;
+				 	System.out.print(lblNewLabel.getText().toString());
 				      j.panel.add(lblNewLabel);
 			        j.repaint();
 			        j.revalidate();
+
 			    	dispose();
+			    	
 				
 			}
 		});
@@ -95,6 +96,14 @@ public class OnOfGUI extends JFrame {
 		getContentPane().add(btnCancel);
 		setSize(450, 370);
 		
+	}
+	protected JLabel CreateLabel(String string, int x2, int y2, int hight2, int width2) {
+	       JLabel lblNewLabel = new JLabel(string);
+	        lblNewLabel.setBorder(new LineBorder(new Color(0, 0, 0), 1));
+	        lblNewLabel.setBounds(x2, y2, hight2, width2);
+	      lblNewLabel.setText(" "+textField.getText().toString()+"");
+	      return lblNewLabel;
+		// TODO Auto-generated method stub
 	}
 	
 }
