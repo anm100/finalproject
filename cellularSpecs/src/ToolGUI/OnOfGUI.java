@@ -48,7 +48,7 @@ public class OnOfGUI extends JFrame {
 		getContentPane().setBackground(Color.WHITE);
 		getContentPane().setLayout(null);
 		
-		JLabel lblOnoff = new JLabel("<ScreenName>- ONOFF");
+		JLabel lblOnoff = new JLabel(ScreenName+"- ONOFF");
 		lblOnoff.setFont(new Font("Arial", Font.BOLD, 22));
 		lblOnoff.setBounds(20, 11, 361, 36);
 		getContentPane().add(lblOnoff);
@@ -66,7 +66,7 @@ public class OnOfGUI extends JFrame {
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
-		 btnSave = new JButton("save");
+		 btnSave = new JButton("Add element");
 		btnSave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				//ScreenGUI j=new ScreenGUI
@@ -84,11 +84,11 @@ public class OnOfGUI extends JFrame {
 				
 			}
 		});
-		btnSave.setBounds(99, 287, 89, 23);
+		btnSave.setBounds(128, 287, 112, 23);
 		getContentPane().add(btnSave);
 		
 		JButton btnCancel = new JButton("cancel");
-		btnCancel.setBounds(230, 287, 89, 23);
+		btnCancel.setBounds(250, 287, 116, 23);
 		getContentPane().add(btnCancel);
 		
 		JRadioButton rdbtnOn = new JRadioButton("ON");
