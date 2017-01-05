@@ -41,9 +41,7 @@ public class MainScreenGui extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				flage=true;
 			
-			}
-			
-			
+			}	
 		});
 		addMouseListener(new MouseListener()  {
 			public void actionPerformed(ActionEvent e) {
