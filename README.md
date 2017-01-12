@@ -1,4 +1,3 @@
 # finalproject
 
-Grammar Check
-https://www.paperrater.com/
+Formal Verification of Specs of Applications
