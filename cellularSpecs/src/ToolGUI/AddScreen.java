@@ -6,6 +6,9 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.TextArea;
 import java.awt.Button;
+import java.awt.Font;
+import javax.swing.JTextPane;
+import javax.swing.JScrollPane;
 
 public class AddScreen extends JFrame {
 	private JTextField textField;
@@ -14,25 +17,22 @@ public class AddScreen extends JFrame {
 		getContentPane().setLayout(null);
 		
 		JLabel lblAddScreenDetails = new JLabel("Screen details");
-		lblAddScreenDetails.setBounds(10, 23, 89, 14);
+		lblAddScreenDetails.setFont(new Font("Tahoma", Font.BOLD, 15));
+		lblAddScreenDetails.setBounds(10, 11, 159, 20);
 		getContentPane().add(lblAddScreenDetails);
 		
-		JLabel lblScreenName = new JLabel("Name:");
-		lblScreenName.setBounds(10, 48, 69, 14);
+		JLabel lblScreenName = new JLabel("Screen name:");
+		lblScreenName.setBounds(10, 53, 69, 14);
 		getContentPane().add(lblScreenName);
 		
 		textField = new JTextField();
-		textField.setBounds(47, 48, 142, 20);
+		textField.setBounds(80, 50, 309, 20);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
-		JLabel lblDescription = new JLabel("Description");
-		lblDescription.setBounds(10, 80, 69, 14);
+		JLabel lblDescription = new JLabel("Description:");
+		lblDescription.setBounds(10, 128, 69, 14);
 		getContentPane().add(lblDescription);
-		
-		TextArea textArea = new TextArea();
-		textArea.setBounds(10, 100, 179, 179);
-		getContentPane().add(textArea);
 		
 		Button button = new Button("Save");
 		button.setBounds(10, 285, 70, 22);
@@ -41,5 +41,12 @@ public class AddScreen extends JFrame {
 		Button button_1 = new Button("Cancel");
 		button_1.setBounds(99, 285, 70, 22);
 		getContentPane().add(button_1);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(80, 81, 309, 106);
+		getContentPane().add(scrollPane);
+		
+		JTextPane textPane = new JTextPane();
+		scrollPane.setViewportView(textPane);
 	}
 }

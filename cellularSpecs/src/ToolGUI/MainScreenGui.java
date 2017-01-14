@@ -15,6 +15,8 @@ import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.HashMap;
+import javax.swing.JLabel;
+import java.awt.Font;
 
 public class MainScreenGui extends JFrame {
 	Boolean flage;
@@ -28,35 +30,43 @@ public class MainScreenGui extends JFrame {
 		flage=false;
 			setSize(750,600);
 		getContentPane().setLayout(null);
-		//MouseActionListener mouseActionListener=new MouseActionListener();
-		JPanel panel = new JPanel();
-		panel.setBounds(0, 0, 709, 23);
-		getContentPane().add(panel);
-		panel.setLayout(null);
 		
 		JButton btnAddscreen = new JButton("AddScreen");
-		btnAddscreen.setBounds(321, 0, 99, 23);
-		panel.add(btnAddscreen);
+		btnAddscreen.setBounds(25, 55, 99, 23);
+		getContentPane().add(btnAddscreen);
 		
-		JButton btnNew = new JButton("new");
-		btnNew.setBounds(24, 0, 89, 23);
-		panel.add(btnNew);
+		JLabel label = new JLabel("<Spec name>");
+		label.setFont(new Font("Tahoma", Font.BOLD, 18));
+		label.setBounds(34, 11, 163, 35);
+		getContentPane().add(label);
 		
-		JButton btnNewButton = new JButton("import");
-		btnNewButton.setBounds(123, 0, 89, 23);
-		panel.add(btnNewButton);
+		JButton btnNewButton = new JButton("Open..");
+		btnNewButton.setBounds(511, 17, 89, 23);
+		getContentPane().add(btnNewButton);
 		
-		JButton btnExport = new JButton("export");
-		btnExport.setBounds(222, 0, 89, 23);
-		panel.add(btnExport);
+		JButton btnNew = new JButton("NEW");
+		btnNew.setBounds(412, 17, 89, 23);
+		getContentPane().add(btnNew);
 		
-		JButton btnRunVerification = new JButton("Run verification");
-		btnRunVerification.setBounds(570, 0, 113, 23);
-		panel.add(btnRunVerification);
+		JButton btnExport = new JButton("Save spec");
+		btnExport.setBounds(610, 17, 89, 23);
+		getContentPane().add(btnExport);
 		
-		JButton btnSelectrequirment = new JButton("selectRequirment");
-		btnSelectrequirment.setBounds(434, 0, 126, 23);
-		panel.add(btnSelectrequirment);
+		JButton btnRunVerification = new JButton("Verifiy Spec");
+		btnRunVerification.setBounds(563, 513, 136, 23);
+		getContentPane().add(btnRunVerification);
+		btnExport.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNew.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnAddscreen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				flage=true;
