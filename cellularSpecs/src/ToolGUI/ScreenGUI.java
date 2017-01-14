@@ -42,20 +42,15 @@ public class ScreenGUI extends JPanel {
 		panel_1.setBounds(1, 1, 123, 32);
 		add(panel_1);
 		panel_1.setLayout(null);
-		textField = new JTextField();
-		textField.setBounds(71, 6, 50, 20);
-		panel_1.add(textField);
-		textField.setColumns(10);
 		
-		JLabel label = new JLabel("Screen Name");
+		JLabel label = new JLabel("<ScreenName>");
 		label.setFont(new Font("Tahoma", Font.PLAIN, 10));
-		label.setBounds(1, 5, 73, 22);
+		label.setBounds(1, 5, 122, 22);
 		panel_1.add(label);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setBounds(125, 1, 35, 32);
 		add(panel_2);
-		screenName=(textField.getText().toString());
 		   OnOfGUI onOffGui=new OnOfGUI(screenName);
 			 DefUndefGUI  defUndefGUI=new DefUndefGUI(screenName);
 	  		  ListTypeGUI listTypeGui=new ListTypeGUI(screenName);

@@ -18,9 +18,9 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JSeparator;
 import javax.swing.Icon;
 
-public class action extends JFrame
+public class AddActionGUI extends JFrame
 {
-	public action() {
+	public AddActionGUI() {
 		getContentPane().setBackground(Color.WHITE);
 		getContentPane().setLayout(null);
 		
