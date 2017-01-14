@@ -113,7 +113,7 @@ public class ListTypeGUI extends JFrame {
 		lblNewLabel_1.setBounds(20, 291, 84, 14);
 		getContentPane().add(lblNewLabel_1);
 		
-		JComboBox comboBox = new JComboBox();
+		JComboBox comboBox1 = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {""}));
 		comboBox.setBounds(57, 288, 78, 20);
 		getContentPane().add(comboBox);
