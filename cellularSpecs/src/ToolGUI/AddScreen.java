@@ -9,6 +9,7 @@ import java.awt.Button;
 import java.awt.Font;
 import javax.swing.JTextPane;
 import javax.swing.JScrollPane;
+import javax.swing.JButton;
 
 public class AddScreen extends JFrame {
 	private JTextField textField;
@@ -48,5 +49,13 @@ public class AddScreen extends JFrame {
 		
 		JTextPane textPane = new JTextPane();
 		scrollPane.setViewportView(textPane);
+		
+		JButton button_2 = new JButton("cancel");
+		button_2.setBounds(237, 206, 116, 23);
+		getContentPane().add(button_2);
+		
+		JButton button_3 = new JButton("Save");
+		button_3.setBounds(115, 206, 112, 23);
+		getContentPane().add(button_3);
 	}
 }

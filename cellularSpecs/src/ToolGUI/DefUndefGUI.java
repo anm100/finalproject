@@ -48,7 +48,7 @@ public class DefUndefGUI extends JFrame {
 		getContentPane().setBackground(Color.WHITE);
 		getContentPane().setLayout(null);
 		
-		JLabel lblOnoff = new JLabel(ScreenName+"definded/undefinded");
+		JLabel lblOnoff = new JLabel(ScreenName+"-definded/undefinded");
 		lblOnoff.setFont(new Font("Arial", Font.BOLD, 22));
 		lblOnoff.setBounds(20, 11, 361, 36);
 		getContentPane().add(lblOnoff);
@@ -66,7 +66,7 @@ public class DefUndefGUI extends JFrame {
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
-		 btnSave = new JButton("Add element");
+		 btnSave = new JButton("Save");
 		btnSave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				//ScreenGUI j=new ScreenGUI
@@ -87,7 +87,7 @@ public class DefUndefGUI extends JFrame {
 		btnSave.setBounds(128, 287, 112, 23);
 		getContentPane().add(btnSave);
 		
-		JButton btnCancel = new JButton("cancel");
+		JButton btnCancel = new JButton("Cancel");
 		btnCancel.setBounds(250, 287, 116, 23);
 		getContentPane().add(btnCancel);
 		
@@ -114,32 +114,7 @@ public class DefUndefGUI extends JFrame {
 		});
 		button.setBounds(20, 145, 236, 28);
 		getContentPane().add(button);
-		
-		JLabel lblNewLabel_1 = new JLabel(textField.getText()+" val:");
-		lblNewLabel_1.setBounds(10, 200, 84, 14);
-		getContentPane().add(lblNewLabel_1);
-		
-		JComboBox comboBox = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"ON", "OFF"}));
-		comboBox.setBounds(81, 197, 58, 20);
-		getContentPane().add(comboBox);
-		
-		JLabel label = new JLabel("Choose element:");
-		label.setBounds(149, 200, 84, 14);
-		getContentPane().add(label);
-		
-		JComboBox comboBox_1 = new JComboBox();
-		comboBox_1.setBounds(230, 197, 89, 20);
-		getContentPane().add(comboBox_1);
-		
-		JLabel label_1 = new JLabel("Change VAL:");
-		label_1.setBounds(329, 200, 69, 14);
-		getContentPane().add(label_1);
-		
-		JComboBox comboBox_2 = new JComboBox();
-		comboBox_2.setBounds(397, 197, 78, 20);
-		getContentPane().add(comboBox_2);
-		setSize(501, 378);
+		setSize(501, 367);
 		
 	}
 	protected JLabel CreateLabel(String string, int x2, int y2, int hight2, int width2) {

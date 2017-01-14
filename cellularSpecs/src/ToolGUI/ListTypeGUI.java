@@ -40,13 +40,13 @@ public class ListTypeGUI extends JFrame {
 	private JTextField txtUndefined;
 	private JTextField textField;
 	private String values[]={""} ; 
-	public ListTypeGUI()
+	public ListTypeGUI(String ScreenName)
 	{
 		setTitle("List Element");
 		getContentPane().setBackground(Color.WHITE);
 		getContentPane().setLayout(null);
 		
-		JLabel lblOnoff = new JLabel("List Element");
+		JLabel lblOnoff = new JLabel(ScreenName+"-List Element");
 		lblOnoff.setFont(new Font("Arial", Font.BOLD, 22));
 		lblOnoff.setBounds(20, 11, 361, 36);
 		getContentPane().add(lblOnoff);
@@ -81,7 +81,7 @@ public class ListTypeGUI extends JFrame {
 		
 		JTextArea textArea = new JTextArea();
 		scrollPane.setViewportView(textArea);
-		setSize(501, 496);
+		setSize(501, 405);
 		
 		values=textArea.getText().split("\n");
 		comboBox.setModel(new DefaultComboBoxModel(values));
@@ -109,30 +109,13 @@ public class ListTypeGUI extends JFrame {
 		button.setBounds(20, 243, 236, 28);
 		getContentPane().add(button);
 		
-		JLabel lblNewLabel_1 = new JLabel(textField.getText()+" val:");
-		lblNewLabel_1.setBounds(20, 291, 84, 14);
-		getContentPane().add(lblNewLabel_1);
+		JButton button_1 = new JButton("Save");
+		button_1.setBounds(120, 295, 112, 23);
+		getContentPane().add(button_1);
 		
-		JComboBox comboBox1 = new JComboBox();
-		comboBox1.setModel(new DefaultComboBoxModel(new String[] {""}));
-		comboBox1.setBounds(57, 288, 78, 20);
-		getContentPane().add(comboBox1);
-		
-		JLabel label = new JLabel("Choose element:");
-		label.setBounds(146, 291, 84, 14);
-		getContentPane().add(label);
-		
-		JComboBox comboBox_1 = new JComboBox();
-		comboBox_1.setBounds(229, 288, 89, 20);
-		getContentPane().add(comboBox_1);
-		
-		JLabel label_1 = new JLabel("Change VAL:");
-		label_1.setBounds(328, 291, 69, 14);
-		getContentPane().add(label_1);
-		
-		JComboBox comboBox_2 = new JComboBox();
-		comboBox_2.setBounds(397, 285, 78, 20);
-		getContentPane().add(comboBox_2);
+		JButton button_2 = new JButton("Cancel");
+		button_2.setBounds(242, 295, 116, 23);
+		getContentPane().add(button_2);
 		setSize(501, 378);
 		
 		comboBox.addPopupMenuListener(new PopupMenuListener() {

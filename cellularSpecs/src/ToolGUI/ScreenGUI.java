@@ -58,7 +58,7 @@ public class ScreenGUI extends JPanel {
 		screenName=(textField.getText().toString());
 		   OnOfGUI onOffGui=new OnOfGUI(screenName);
 			 DefUndefGUI  defUndefGUI=new DefUndefGUI(screenName);
-	  		  ListTypeGUI listTypeGui=new ListTypeGUI();
+	  		  ListTypeGUI listTypeGui=new ListTypeGUI(screenName);
 		   
 		/*JButton btnNewButton = new JButton("+");
 		panel_2.add(btnNewButton);
