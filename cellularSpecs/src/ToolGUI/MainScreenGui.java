@@ -53,8 +53,12 @@ public class MainScreenGui extends JFrame {
 		getContentPane().add(btnExport);
 		
 		JButton btnRunVerification = new JButton("Verifiy Spec");
-		btnRunVerification.setBounds(563, 513, 136, 23);
+		btnRunVerification.setBounds(442, 513, 136, 23);
 		getContentPane().add(btnRunVerification);
+		
+		JButton btnShowresults = new JButton("ShowResults");
+		btnShowresults.setBounds(588, 513, 136, 23);
+		getContentPane().add(btnShowresults);
 		btnExport.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -69,6 +73,8 @@ public class MainScreenGui extends JFrame {
 		});
 		btnAddscreen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				AddScreen as = new AddScreen();
+				as.setVisible(true);
 				flage=true;
 			
 			}	

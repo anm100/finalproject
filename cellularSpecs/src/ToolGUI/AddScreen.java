@@ -23,11 +23,11 @@ public class AddScreen extends JFrame {
 		getContentPane().add(lblAddScreenDetails);
 		
 		JLabel lblScreenName = new JLabel("Screen name:");
-		lblScreenName.setBounds(10, 53, 69, 14);
+		lblScreenName.setBounds(10, 53, 84, 14);
 		getContentPane().add(lblScreenName);
 		
 		textField = new JTextField();
-		textField.setBounds(80, 50, 309, 20);
+		textField.setBounds(91, 50, 309, 20);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
@@ -44,7 +44,7 @@ public class AddScreen extends JFrame {
 		getContentPane().add(button_1);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(80, 81, 309, 106);
+		scrollPane.setBounds(91, 81, 298, 106);
 		getContentPane().add(scrollPane);
 		
 		JTextPane textPane = new JTextPane();
