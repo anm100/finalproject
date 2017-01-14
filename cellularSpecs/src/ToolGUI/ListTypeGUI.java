@@ -114,9 +114,9 @@ public class ListTypeGUI extends JFrame {
 		getContentPane().add(lblNewLabel_1);
 		
 		JComboBox comboBox1 = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {""}));
-		comboBox.setBounds(57, 288, 78, 20);
-		getContentPane().add(comboBox);
+		comboBox1.setModel(new DefaultComboBoxModel(new String[] {""}));
+		comboBox1.setBounds(57, 288, 78, 20);
+		getContentPane().add(comboBox1);
 		
 		JLabel label = new JLabel("Choose element:");
 		label.setBounds(146, 291, 84, 14);

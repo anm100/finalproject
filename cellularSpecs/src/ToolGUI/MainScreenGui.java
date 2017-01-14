@@ -26,23 +26,45 @@ public class MainScreenGui extends JFrame {
 	
 	 public MainScreenGui() {
 		flage=false;
-			setSize(500,600);
+			setSize(750,600);
 		getContentPane().setLayout(null);
 		//MouseActionListener mouseActionListener=new MouseActionListener();
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 0, 484, 23);
+		panel.setBounds(0, 0, 709, 23);
 		getContentPane().add(panel);
 		panel.setLayout(null);
 		
 		JButton btnAddscreen = new JButton("AddScreen");
+		btnAddscreen.setBounds(321, 0, 99, 23);
+		panel.add(btnAddscreen);
 		
-		int x1=0,y1;
+		JButton btnNew = new JButton("new");
+		btnNew.setBounds(24, 0, 89, 23);
+		panel.add(btnNew);
+		
+		JButton btnNewButton = new JButton("import");
+		btnNewButton.setBounds(123, 0, 89, 23);
+		panel.add(btnNewButton);
+		
+		JButton btnExport = new JButton("export");
+		btnExport.setBounds(222, 0, 89, 23);
+		panel.add(btnExport);
+		
+		JButton btnRunVerification = new JButton("Run verification");
+		btnRunVerification.setBounds(570, 0, 113, 23);
+		panel.add(btnRunVerification);
+		
+		JButton btnSelectrequirment = new JButton("selectRequirment");
+		btnSelectrequirment.setBounds(434, 0, 126, 23);
+		panel.add(btnSelectrequirment);
 		btnAddscreen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				flage=true;
 			
 			}	
 		});
+		
+		int x1=0,y1;
 		addMouseListener(new MouseListener()  {
 			public void actionPerformed(ActionEvent e) {
 			
@@ -93,9 +115,6 @@ public class MainScreenGui extends JFrame {
 			}
 			
 		});
-		
-		btnAddscreen.setBounds(385, 0, 99, 23);
-		panel.add(btnAddscreen);
 	}
 
 
@@ -104,5 +123,4 @@ public class MainScreenGui extends JFrame {
 	
 	f.setVisible(true);
 }
-
 }
