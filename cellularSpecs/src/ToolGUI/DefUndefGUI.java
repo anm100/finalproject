@@ -44,11 +44,11 @@ public class DefUndefGUI extends JFrame {
 	protected static JButton btnSave;
 	public DefUndefGUI(String ScreenName)
 	{
-		setTitle(ScreenName+"definded/undefinded");
+		setTitle(ScreenName+"Empty/NotEmpty");
 		getContentPane().setBackground(Color.WHITE);
 		getContentPane().setLayout(null);
 		
-		JLabel lblOnoff = new JLabel(ScreenName+"-definded/undefinded");
+		JLabel lblOnoff = new JLabel("<dynamic>-Empty/NotEmpty");
 		lblOnoff.setFont(new Font("Arial", Font.BOLD, 22));
 		lblOnoff.setBounds(20, 11, 361, 36);
 		getContentPane().add(lblOnoff);
@@ -91,11 +91,11 @@ public class DefUndefGUI extends JFrame {
 		btnCancel.setBounds(250, 287, 116, 23);
 		getContentPane().add(btnCancel);
 		
-		JRadioButton rdbtnOn = new JRadioButton("definded");
+		JRadioButton rdbtnOn = new JRadioButton("NotEmpty");
 		rdbtnOn.setBounds(100, 96, 78, 28);
 		getContentPane().add(rdbtnOn);
 		
-		JRadioButton rdbtnOff = new JRadioButton("undefinded");
+		JRadioButton rdbtnOff = new JRadioButton("Empty");
 		rdbtnOff.setSelected(true);
 		rdbtnOff.setBounds(178, 96, 84, 28);
 		getContentPane().add(rdbtnOff);
